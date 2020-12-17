@@ -1,0 +1,8 @@
+.LanguageButton {
+  height: 50%;
+  border-radius: 2%;
+  margin-left: 2%;
+  margin-top: 0.7%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
