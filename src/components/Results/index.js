@@ -21,6 +21,7 @@ const MangoTitle = styled(Title)`
 export default function Results() {
   const similarSongs = useSelector(allSimilarSongsSelector);
   const similarSongsError = useSelector(getSimilarSongErrorSelector);
+  console.log("similarSongsError", similarSongsError);
   console.log("similarSongs", similarSongs);
 
   return (

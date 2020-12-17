@@ -8,7 +8,6 @@ function* fetchSongs(action) {
     yield put({
       type: "SET_SIMILAR_SONGS",
       similarSongs,
-      similarSongsError: null,
     });
   } catch (e) {
     console.log("eee", e);
