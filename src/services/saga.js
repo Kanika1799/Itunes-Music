@@ -5,7 +5,11 @@ function* fetchSongs(action) {
   try {
     const similarSongs = yield call(getSimilarSongs, action.songPhrase);
     console.log(similarSongs, "similarSongsssssss");
-    yield put({ type: "SET_SIMILAR_SONGS", similarSongs });
+    yield put({
+      type: "SET_SIMILAR_SONGS",
+      similarSongs,
+      similarSongsError: null,
+    });
   } catch (e) {
     console.log("eee", e);
     yield put({ type: "SET_SIMILAR_SONGS_ERROR", similarSongsError: e });

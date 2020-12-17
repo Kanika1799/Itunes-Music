@@ -23,6 +23,7 @@ export const songReducer = (state = initialState, action) =>
         break;
       case songTypes.SET_SIMILAR_SONGS:
         draft.similarSongs = action.similarSongs;
+        draft.similarSongsError = action.similarSongsError;
         break;
       case songTypes.SET_SIMILAR_SONGS_ERROR:
         draft.similarSongsError = action.similarSongsError;
