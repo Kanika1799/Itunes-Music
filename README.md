@@ -2,32 +2,38 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It is the react-redux application that connects to the itunes connecting API's to retrieve songs for a search term.
-**Global state management using reduxSauce**
- Files - src/redux/reducers/localeReducer.js
-         src/redux/reducers/songReducer.js
+### It is the react-redux application that connects to the itunes connecting API's to retrieve songs for a search term.
 
-**Computing and getting state from the redux store using Reselect**
-  Files - src/redux/selectors/localeSelector.js
-          src/redux/selectors/localeSelector.js
+## Global state management using reduxSauce
+ ### Files 
+     * src/redux/reducers/localeReducer.js
+     * src/redux/reducers/songReducer.js
+
+## Computing and getting state from the redux store using Reselect
+  ### Files 
+      * src/redux/selectors/localeSelector.js
+      * src/redux/selectors/localeSelector.js
   
-**Implementing a Redux middleware using redux-sagas**
-  Files -  src/redux/store.js
-           src/redux/services/saga.js
+## Implementing a Redux middleware using redux-sagas
+  ### Files
+      * src/redux/store.js
+      * src/redux/services/saga.js
         
-****Network requests using apisauce**
-  Files - src/redux/services/api.js
+## Network requests using apisauce
+  ### Files
+     * src/redux/services/api.js
 
-**Styling using styled-components**
-  Files - src/components/Results/Song/index.js
-          src/components/Homepage/index.js
+## Styling using styled-components
+  ### Files 
+     * src/components/Results/Song/index.js
+     * src/components/Homepage/index.js
       
-**Used antd as the component library**
+##Used antd as the component library
 
-**Localization using react-intl**
-  Translate English to Hindi and Hindi to English
+##Localization using react-intl
+  ### Translate English to Hindi and Hindi to English
   
-**Routing using react-router**
+## Routing using react-router
 
 ## Available Scripts
 
