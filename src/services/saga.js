@@ -1,15 +1,14 @@
-import { call, put, takeLatest } from 'redux-saga/effects'
-import {getSimilarSongs} from './api'
+import { call, put, takeLatest } from "redux-saga/effects";
+import { getSimilarSongs } from "./api";
 
 function* fetchSongs(action) {
-   try {
-      const similarSongs = yield call(getSimilarSongs, action.songPhrase);
-      console.log(similarSongs, 'similarSongsssssss')
-      yield put({type: "SET_SIMILAR_SONGS", similarSongs});
-   } catch (e) {
-      console.log('error',e)
-   }
-
+  try {
+    const similarSongs = yield call(getSimilarSongs, action.songPhrase);
+    console.log(similarSongs, "similarSongsssssss");
+    yield put({ type: "SET_SIMILAR_SONGS", similarSongs });
+  } catch (e) {
+    yield put({ type: "SET_SIMILAR_SONGS_ERROR", e });
+  }
 }
 
 function* mySaga() {

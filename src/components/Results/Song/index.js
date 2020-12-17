@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { render } from "react-dom";
+import React from "react";
 import "antd/dist/antd.css";
-import { Card, Row, Col, Image, Button } from "antd";
+import { Card, Row, Col, Image } from "antd";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import "./index.css";
-const { Meta } = Card;
 
 const Title = styled.h1`
   font-size: 1.2em;
