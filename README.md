@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### It is the react-redux application that connects to the itunes connecting API's to retrieve songs for a search term.
 
+### Deployed Project on - https://gallant-agnesi-dae97f.netlify.app/
+
 ## Global state management using reduxSauce
  ### Files 
      * src/redux/reducers/localeReducer.js
